@@ -3,6 +3,8 @@
   <div>hello {{ name }}, on {{ date }} at {{ location }} i met you and i was so happy</div>
 
   <div v-text="channel"></div>
+  <h2 v-bind:id="headingId">Heading</h2>
+  <button v-bind:disabled="isDisabled">Disabled</button>
  </div>
  
 </template>
@@ -21,7 +23,9 @@ export default {
       name: 'Tawfiq the superman',
       date : '2016-05-01',
       location : 'Aboabo',
-      channel : '<b> tawfiq </b>'
+      channel : '<b> tawfiq </b>',
+      headingId : 'heading',
+      isDisabled: true
     }
   }
 }
