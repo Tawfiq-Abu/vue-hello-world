@@ -1,8 +1,8 @@
 <template>
  <div>
-  hello {{ name }}, on {{ date }} at {{ location }} i met you and i was so happy
+  <div>hello {{ name }}, on {{ date }} at {{ location }} i met you and i was so happy</div>
 
-  <div v-text="location"></div>
+  <div v-text="channel"></div>
  </div>
  
 </template>
@@ -20,7 +20,8 @@ export default {
     return {
       name: 'Tawfiq the superman',
       date : '2016-05-01',
-      location : 'Aboabo'
+      location : 'Aboabo',
+      channel : '<b> tawfiq </b>'
     }
   }
 }
