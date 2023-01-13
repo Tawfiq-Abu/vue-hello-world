@@ -1,15 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <div>
+  hello {{ name }}, on {{ date }} at {{ location }} i met you and i was so happy
+
+  <div v-text="location"></div>
+ </div>
+ 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  // components: {
+  //   HelloWorld
+  // }
+
+  data(){
+    return {
+      name: 'Tawfiq the superman',
+      date : '2016-05-01',
+      location : 'Aboabo'
+    }
   }
 }
 </script>
